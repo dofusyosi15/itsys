@@ -18,21 +18,7 @@ function removeActive() {
 	$('.active').removeClass();
 }
 
-function homeView() {
+function menuSelected(menuActive) {
 	removeActive();
-	$('#dvHome')[0].className = 'active';
-}
-function nosotrosView() {
-	removeActive();
-	$('#dvNosotros')[0].className = 'active';
-}
-
-function catalogoView() {
-	removeActive();
-	$('#dvCatalogo')[0].className = 'active';
-}
-
-function contactoView() {
-	removeActive();
-	$('#dvContacto')[0].className = 'active';
+	$('#' + menuActive)[0].className = 'active';
 }

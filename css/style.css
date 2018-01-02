@@ -24,6 +24,7 @@ body, html {
   transition: opacity 300ms ease-out;
 }
 
+
 section {
 	opacity: 0;
 }
