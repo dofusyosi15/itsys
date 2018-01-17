@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to IT Systems</title>
-</head>
-<body>
-    <h1>Hello World!</h1>
-</body>
-</html>
+$(document).ready(function()
+{
+
+	// Setup variables
+	$body = $('body');
+
+    //FadeIn all sections
+	$body.imagesLoaded( function() {
+		setTimeout(function() {
+      //Cargado
+			 document.body.className = 'loaded';
+		}, 800);
+	});
+
+});
+
+function removeActive() {
+	$('.active').removeClass();
+}
+
+function menuSelected(menuActive) {
+	removeActive();
+	$('#' + menuActive)[0].className = 'active';
+}
